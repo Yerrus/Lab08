@@ -15,8 +15,9 @@ app.get('/', function (req, res) {
     res.send(dom.serialize());
 });
 
-app.use('/js', express.static('js'))
-app.use('/css', express.static('css'))
+app.use('/js', express.static('js'));
+app.use('/css', express.static('css'));
+app.use('/images', express.static('images'));
 
 /*
 app.get('/ajax-GET', function (req, res) {
