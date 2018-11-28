@@ -19,21 +19,10 @@ app.use('/js', express.static('js'));
 app.use('/css', express.static('css'));
 app.use('/images', express.static('images'));
 
-/*
-app.get('/ajax-GET', function (req, res) {
-
-    // set the type of response:
-    res.setHeader('Content-Type', 'application/json');
-    let d = new Date();
-
-    res.send({ msg:d });
-
-})
-
 app.get('/ajax-GET-list', function (req, res) {
 
-    //res.setHeader('Content-Type', 'application/json');
-    //console.log(req.query['format']);
+    res.setHeader('Content-Type', 'application/json');
+    console.log(req.query['format']);
     let formatOfResponse = req.query['format'];
     let dataList = null;
 
@@ -41,19 +30,21 @@ app.get('/ajax-GET-list', function (req, res) {
 
         res.setHeader('Content-Type', 'text/html');
         dataList = lists.getHTML();
+        console.log(dataList);
         res.send(dataList);
 
     } else if(formatOfResponse == 'json-list') {
 
         res.setHeader('Content-Type', 'application/json');
         dataList = lists.getJSON();
+        console.log(dataList);
         res.send(dataList);
 
     } else {
         res.send({msg: 'Wrong format!'});
     }
 });
-*/
+
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
