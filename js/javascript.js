@@ -26,7 +26,7 @@ $(document).ready(function () {
       console.log("SUCCESS JSON:", data);
       
       var area = $("#coming-soon");
-      var htmlStr = '<div class="title">Current Showing</div>';
+      var htmlStr = '<div class="title">Coming Soon</div>';
       for (let i = 0; i < data.length; i++) {
         var img = data[i]["img"];
         var name = data[i]["name"];
