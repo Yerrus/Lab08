@@ -124,16 +124,69 @@ img {
   font-weight: bold;
 }
 
-button:hover {
-   background-color: gray;
-}
-
 #logo {
   width: 100%;
-  height: 100px;
+  height: 80px;
   object-fit: cover;
 }
 
-button {
+.list-container button {
   width: 100%;
+}
+
+.nav-right > .button-primary, .nav-right > .button-primary:active, .nav-right > .button-primary:focus {
+  background-color: rgb(241, 241, 241);
+  color: #E30613;
+  border-color: #E30613;
+}
+
+.nav-right > .button-primary:hover {
+  background-color: rgb(250, 25, 40);
+  border-color: rgb(250, 25, 40);
+}
+
+.nav button {
+  border: none;
+}
+
+.nav-right > button {
+  float: left;
+  margin: 5px;
+}
+
+.nav-right {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.nav, .container {
+  background-color: rgb(241, 241, 241);
+  opacity: 0.95;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 14pt;
+
+  color: #E30613;
+  font-weight: 400;
+}
+
+
+.one-half .row {
+  margin: 0 20px;
+  border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.container {
+  box-shadow: 0 0  10px black;
+}
+
+body {
+  background-image: url('../images/wallpaper.jpg');
+  background-attachment: fixed;
+  background-size: 100% auto;
+
+  
 }
